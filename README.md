@@ -1,15 +1,29 @@
-Ibrahim S Madi
-Followers:
-4
-Total Repo:
-47
-Star's Count:
-38
-Fork's Count:
-8
-Contributions:
-55
-Total Issues:
-2
-Closed Issues:
-2
+class DevIsm extends Developer
+{
+    public String $name = "Ibrahim S. Madi";
+    public String $position = "Web Developer Laravel & Vue";
+
+    public function knowledge()
+    {
+        return collect([
+            "Laravel",
+            "VUE",
+            "NUXTJS",
+        ]);
+    }
+
+    public function contacts()
+    {
+        return collect([
+            "github" => "https://github.com/madi-madi",
+            "gitlab" => "https://gitlab.com/madi-madi2010",
+        ]);
+    }
+    
+    public function publications()
+    {
+        return collect([
+            "medium" => "https://medium.com/",
+        ]);
+    }
+}
